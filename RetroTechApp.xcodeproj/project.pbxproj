@@ -148,6 +148,7 @@
 				442DB673241B3F5400E3424C /* Delegates */,
 				442DB674241B3F7400E3424C /* Utils */,
 				442DB675241B3F8F00E3424C /* Managers */,
+				442DB677241B3FAC00E3424C /* ViewModel */,
 				442DB676241B3F9D00E3424C /* Model */,
 				442DB63F241B3C9B00E3424C /* ComputerTableViewCell.swift */,
 				442DB621241B3AE700E3424C /* ViewController.swift */,
@@ -214,7 +215,6 @@
 				442DB639241B3C3B00E3424C /* Company.swift */,
 				442DB63B241B3C5800E3424C /* Device.swift */,
 				442DB63D241B3C7500E3424C /* LinkToDevice.swift */,
-				442DB677241B3FAC00E3424C /* ViewModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
