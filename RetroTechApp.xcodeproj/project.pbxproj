@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,50 @@
 		442DB625241B3AE700E3424C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442DB623241B3AE700E3424C /* Main.storyboard */; };
 		442DB627241B3AEA00E3424C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 442DB626241B3AEA00E3424C /* Assets.xcassets */; };
 		442DB62A241B3AEA00E3424C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 442DB628241B3AEA00E3424C /* LaunchScreen.storyboard */; };
+		442DB632241B3B5400E3424C /* ComputerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB631241B3B5400E3424C /* ComputerDetailsView.swift */; };
+		442DB634241B3BD900E3424C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB633241B3BD900E3424C /* DetailsViewController.swift */; };
+		442DB636241B3C0000E3424C /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB635241B3C0000E3424C /* JSONManager.swift */; };
+		442DB638241B3C2200E3424C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB637241B3C2200E3424C /* NetworkManager.swift */; };
+		442DB63A241B3C3B00E3424C /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB639241B3C3B00E3424C /* Company.swift */; };
+		442DB63C241B3C5800E3424C /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB63B241B3C5800E3424C /* Device.swift */; };
+		442DB63E241B3C7500E3424C /* LinkToDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB63D241B3C7500E3424C /* LinkToDevice.swift */; };
+		442DB640241B3C9B00E3424C /* ComputerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB63F241B3C9B00E3424C /* ComputerTableViewCell.swift */; };
+		442DB642241B3CEB00E3424C /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB641241B3CEB00E3424C /* DateUtils.swift */; };
+		442DB644241B3D2100E3424C /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB643241B3D2100E3424C /* Notifications.swift */; };
+		442DB646241B3D3B00E3424C /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB645241B3D3B00E3424C /* UIHelper.swift */; };
+		442DB648241B3D7C00E3424C /* ComputerDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB647241B3D7B00E3424C /* ComputerDetailsViewModel.swift */; };
+		442DB64A241B3DA100E3424C /* ComputerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB649241B3DA100E3424C /* ComputerViewModel.swift */; };
+		442DB64C241B3DC100E3424C /* AlertDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB64B241B3DC100E3424C /* AlertDelegate.swift */; };
+		442DB64E241B3DE500E3424C /* NavigationBarTitleChangerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB64D241B3DE500E3424C /* NavigationBarTitleChangerDelegate.swift */; };
+		442DB660241B3E7400E3424C /* ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB65F241B3E7400E3424C /* ViewModelTests.swift */; };
+		442DB662241B3E9900E3424C /* JSONManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB661241B3E9900E3424C /* JSONManagerTests.swift */; };
+		442DB66A241B3ED800E3424C /* RetroTechAppNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB669241B3ED800E3424C /* RetroTechAppNetworkTests.swift */; };
+		442DB672241B3F1300E3424C /* JSONStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB671241B3F1300E3424C /* JSONStorage.swift */; };
+		731E509D89E6CCD69418D248 /* Pods_RetroTechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995648C222E6617AAC1B9F01 /* Pods_RetroTechApp.framework */; };
+		7AC17675C93496A1BECBDFF2 /* Pods_RetroTechAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553C08D457042A732B0D59A5 /* Pods_RetroTechAppTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		442DB658241B3E2500E3424C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442DB612241B3AE700E3424C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442DB619241B3AE700E3424C;
+			remoteInfo = RetroTechApp;
+		};
+		442DB66C241B3ED800E3424C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 442DB612241B3AE700E3424C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 442DB619241B3AE700E3424C;
+			remoteInfo = RetroTechApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		442DB61A241B3AE700E3424C /* RetroTechApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroTechApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26D1BDD7006614F1682DDDC8 /* Pods-RetroTechAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetroTechAppTests.debug.xcconfig"; path = "Target Support Files/Pods-RetroTechAppTests/Pods-RetroTechAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		375E182944B4A7FCFCC5B1CC /* Pods-RetroTechApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetroTechApp.debug.xcconfig"; path = "Target Support Files/Pods-RetroTechApp/Pods-RetroTechApp.debug.xcconfig"; sourceTree = "<group>"; };
+		442DB61A241B3AE700E3424C /* Retro Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Retro Tech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		442DB61D241B3AE700E3424C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		442DB61F241B3AE700E3424C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		442DB621241B3AE700E3424C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,10 +64,53 @@
 		442DB626241B3AEA00E3424C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		442DB629241B3AEA00E3424C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		442DB62B241B3AEA00E3424C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442DB631241B3B5400E3424C /* ComputerDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerDetailsView.swift; sourceTree = "<group>"; };
+		442DB633241B3BD900E3424C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		442DB635241B3C0000E3424C /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		442DB637241B3C2200E3424C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		442DB639241B3C3B00E3424C /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		442DB63B241B3C5800E3424C /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		442DB63D241B3C7500E3424C /* LinkToDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkToDevice.swift; sourceTree = "<group>"; };
+		442DB63F241B3C9B00E3424C /* ComputerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerTableViewCell.swift; sourceTree = "<group>"; };
+		442DB641241B3CEB00E3424C /* DateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		442DB643241B3D2100E3424C /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		442DB645241B3D3B00E3424C /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		442DB647241B3D7B00E3424C /* ComputerDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerDetailsViewModel.swift; sourceTree = "<group>"; };
+		442DB649241B3DA100E3424C /* ComputerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerViewModel.swift; sourceTree = "<group>"; };
+		442DB64B241B3DC100E3424C /* AlertDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDelegate.swift; sourceTree = "<group>"; };
+		442DB64D241B3DE500E3424C /* NavigationBarTitleChangerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTitleChangerDelegate.swift; sourceTree = "<group>"; };
+		442DB653241B3E2400E3424C /* RetroTechAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroTechAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		442DB657241B3E2500E3424C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442DB65F241B3E7400E3424C /* ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTests.swift; sourceTree = "<group>"; };
+		442DB661241B3E9900E3424C /* JSONManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManagerTests.swift; sourceTree = "<group>"; };
+		442DB667241B3ED800E3424C /* RetroTechAppNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroTechAppNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		442DB669241B3ED800E3424C /* RetroTechAppNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroTechAppNetworkTests.swift; sourceTree = "<group>"; };
+		442DB66B241B3ED800E3424C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442DB671241B3F1300E3424C /* JSONStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStorage.swift; sourceTree = "<group>"; };
+		553C08D457042A732B0D59A5 /* Pods_RetroTechAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetroTechAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		71A1924665570B808ADB6B4A /* Pods-RetroTechAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetroTechAppTests.release.xcconfig"; path = "Target Support Files/Pods-RetroTechAppTests/Pods-RetroTechAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		995648C222E6617AAC1B9F01 /* Pods_RetroTechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetroTechApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5264C02887CCDAB7FE2F734 /* Pods-RetroTechApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetroTechApp.release.xcconfig"; path = "Target Support Files/Pods-RetroTechApp/Pods-RetroTechApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		442DB617241B3AE700E3424C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				731E509D89E6CCD69418D248 /* Pods_RetroTechApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442DB650241B3E2400E3424C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC17675C93496A1BECBDFF2 /* Pods_RetroTechAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442DB664241B3ED800E3424C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,14 +124,20 @@
 			isa = PBXGroup;
 			children = (
 				442DB61C241B3AE700E3424C /* RetroTechApp */,
+				442DB654241B3E2500E3424C /* RetroTechAppTests */,
+				442DB668241B3ED800E3424C /* RetroTechAppNetworkTests */,
 				442DB61B241B3AE700E3424C /* Products */,
+				61F4E8AADC367D4A8CA67D28 /* Pods */,
+				FA0D4E33ACC0231ADFC1C0AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		442DB61B241B3AE700E3424C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				442DB61A241B3AE700E3424C /* RetroTechApp.app */,
+				442DB61A241B3AE700E3424C /* Retro Tech.app */,
+				442DB653241B3E2400E3424C /* RetroTechAppTests.xctest */,
+				442DB667241B3ED800E3424C /* RetroTechAppNetworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +145,118 @@
 		442DB61C241B3AE700E3424C /* RetroTechApp */ = {
 			isa = PBXGroup;
 			children = (
-				442DB61D241B3AE700E3424C /* AppDelegate.swift */,
-				442DB61F241B3AE700E3424C /* SceneDelegate.swift */,
+				442DB673241B3F5400E3424C /* Delegates */,
+				442DB674241B3F7400E3424C /* Utils */,
+				442DB675241B3F8F00E3424C /* Managers */,
+				442DB676241B3F9D00E3424C /* Model */,
+				442DB63F241B3C9B00E3424C /* ComputerTableViewCell.swift */,
 				442DB621241B3AE700E3424C /* ViewController.swift */,
-				442DB623241B3AE700E3424C /* Main.storyboard */,
-				442DB626241B3AEA00E3424C /* Assets.xcassets */,
-				442DB628241B3AEA00E3424C /* LaunchScreen.storyboard */,
+				442DB633241B3BD900E3424C /* DetailsViewController.swift */,
+				442DB678241B3FC200E3424C /* View */,
 				442DB62B241B3AEA00E3424C /* Info.plist */,
 			);
 			path = RetroTechApp;
+			sourceTree = "<group>";
+		};
+		442DB654241B3E2500E3424C /* RetroTechAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				442DB661241B3E9900E3424C /* JSONManagerTests.swift */,
+				442DB671241B3F1300E3424C /* JSONStorage.swift */,
+				442DB65F241B3E7400E3424C /* ViewModelTests.swift */,
+				442DB657241B3E2500E3424C /* Info.plist */,
+			);
+			path = RetroTechAppTests;
+			sourceTree = "<group>";
+		};
+		442DB668241B3ED800E3424C /* RetroTechAppNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				442DB669241B3ED800E3424C /* RetroTechAppNetworkTests.swift */,
+				442DB66B241B3ED800E3424C /* Info.plist */,
+			);
+			path = RetroTechAppNetworkTests;
+			sourceTree = "<group>";
+		};
+		442DB673241B3F5400E3424C /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				442DB61D241B3AE700E3424C /* AppDelegate.swift */,
+				442DB61F241B3AE700E3424C /* SceneDelegate.swift */,
+				442DB64B241B3DC100E3424C /* AlertDelegate.swift */,
+				442DB64D241B3DE500E3424C /* NavigationBarTitleChangerDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		442DB674241B3F7400E3424C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				442DB643241B3D2100E3424C /* Notifications.swift */,
+				442DB641241B3CEB00E3424C /* DateUtils.swift */,
+				442DB645241B3D3B00E3424C /* UIHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		442DB675241B3F8F00E3424C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				442DB635241B3C0000E3424C /* JSONManager.swift */,
+				442DB637241B3C2200E3424C /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		442DB676241B3F9D00E3424C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				442DB639241B3C3B00E3424C /* Company.swift */,
+				442DB63B241B3C5800E3424C /* Device.swift */,
+				442DB63D241B3C7500E3424C /* LinkToDevice.swift */,
+				442DB677241B3FAC00E3424C /* ViewModel */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		442DB677241B3FAC00E3424C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				442DB647241B3D7B00E3424C /* ComputerDetailsViewModel.swift */,
+				442DB649241B3DA100E3424C /* ComputerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		442DB678241B3FC200E3424C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				442DB631241B3B5400E3424C /* ComputerDetailsView.swift */,
+				442DB623241B3AE700E3424C /* Main.storyboard */,
+				442DB626241B3AEA00E3424C /* Assets.xcassets */,
+				442DB628241B3AEA00E3424C /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61F4E8AADC367D4A8CA67D28 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				375E182944B4A7FCFCC5B1CC /* Pods-RetroTechApp.debug.xcconfig */,
+				A5264C02887CCDAB7FE2F734 /* Pods-RetroTechApp.release.xcconfig */,
+				26D1BDD7006614F1682DDDC8 /* Pods-RetroTechAppTests.debug.xcconfig */,
+				71A1924665570B808ADB6B4A /* Pods-RetroTechAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FA0D4E33ACC0231ADFC1C0AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				995648C222E6617AAC1B9F01 /* Pods_RetroTechApp.framework */,
+				553C08D457042A732B0D59A5 /* Pods_RetroTechAppTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +266,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 442DB62E241B3AEA00E3424C /* Build configuration list for PBXNativeTarget "RetroTechApp" */;
 			buildPhases = (
+				8041DE5360BCF03A1FA87AFE /* [CP] Check Pods Manifest.lock */,
 				442DB616241B3AE700E3424C /* Sources */,
 				442DB617241B3AE700E3424C /* Frameworks */,
 				442DB618241B3AE700E3424C /* Resources */,
+				02EBAA7448E690DF1897F8C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -84,8 +278,45 @@
 			);
 			name = RetroTechApp;
 			productName = RetroTechApp;
-			productReference = 442DB61A241B3AE700E3424C /* RetroTechApp.app */;
+			productReference = 442DB61A241B3AE700E3424C /* Retro Tech.app */;
 			productType = "com.apple.product-type.application";
+		};
+		442DB652241B3E2400E3424C /* RetroTechAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442DB65A241B3E2500E3424C /* Build configuration list for PBXNativeTarget "RetroTechAppTests" */;
+			buildPhases = (
+				21DAC1DBB9BC189DC9A86C2C /* [CP] Check Pods Manifest.lock */,
+				442DB64F241B3E2400E3424C /* Sources */,
+				442DB650241B3E2400E3424C /* Frameworks */,
+				442DB651241B3E2400E3424C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				442DB659241B3E2500E3424C /* PBXTargetDependency */,
+			);
+			name = RetroTechAppTests;
+			productName = RetroTechAppTests;
+			productReference = 442DB653241B3E2400E3424C /* RetroTechAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		442DB666241B3ED800E3424C /* RetroTechAppNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442DB66E241B3ED800E3424C /* Build configuration list for PBXNativeTarget "RetroTechAppNetworkTests" */;
+			buildPhases = (
+				442DB663241B3ED800E3424C /* Sources */,
+				442DB664241B3ED800E3424C /* Frameworks */,
+				442DB665241B3ED800E3424C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				442DB66D241B3ED800E3424C /* PBXTargetDependency */,
+			);
+			name = RetroTechAppNetworkTests;
+			productName = RetroTechAppNetworkTests;
+			productReference = 442DB667241B3ED800E3424C /* RetroTechAppNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +330,14 @@
 				TargetAttributes = {
 					442DB619241B3AE700E3424C = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					442DB652241B3E2400E3424C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 442DB619241B3AE700E3424C;
+					};
+					442DB666241B3ED800E3424C = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 442DB619241B3AE700E3424C;
 					};
 				};
 			};
@@ -116,6 +355,8 @@
 			projectRoot = "";
 			targets = (
 				442DB619241B3AE700E3424C /* RetroTechApp */,
+				442DB652241B3E2400E3424C /* RetroTechAppTests */,
+				442DB666241B3ED800E3424C /* RetroTechAppNetworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,20 +372,144 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		442DB651241B3E2400E3424C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442DB665241B3ED800E3424C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02EBAA7448E690DF1897F8C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetroTechApp/Pods-RetroTechApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RetroTechApp/Pods-RetroTechApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RetroTechApp/Pods-RetroTechApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21DAC1DBB9BC189DC9A86C2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RetroTechAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8041DE5360BCF03A1FA87AFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RetroTechApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		442DB616241B3AE700E3424C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				442DB64C241B3DC100E3424C /* AlertDelegate.swift in Sources */,
+				442DB632241B3B5400E3424C /* ComputerDetailsView.swift in Sources */,
+				442DB642241B3CEB00E3424C /* DateUtils.swift in Sources */,
+				442DB636241B3C0000E3424C /* JSONManager.swift in Sources */,
 				442DB622241B3AE700E3424C /* ViewController.swift in Sources */,
+				442DB63C241B3C5800E3424C /* Device.swift in Sources */,
+				442DB64E241B3DE500E3424C /* NavigationBarTitleChangerDelegate.swift in Sources */,
+				442DB644241B3D2100E3424C /* Notifications.swift in Sources */,
+				442DB638241B3C2200E3424C /* NetworkManager.swift in Sources */,
 				442DB61E241B3AE700E3424C /* AppDelegate.swift in Sources */,
 				442DB620241B3AE700E3424C /* SceneDelegate.swift in Sources */,
+				442DB634241B3BD900E3424C /* DetailsViewController.swift in Sources */,
+				442DB648241B3D7C00E3424C /* ComputerDetailsViewModel.swift in Sources */,
+				442DB63E241B3C7500E3424C /* LinkToDevice.swift in Sources */,
+				442DB640241B3C9B00E3424C /* ComputerTableViewCell.swift in Sources */,
+				442DB64A241B3DA100E3424C /* ComputerViewModel.swift in Sources */,
+				442DB63A241B3C3B00E3424C /* Company.swift in Sources */,
+				442DB646241B3D3B00E3424C /* UIHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442DB64F241B3E2400E3424C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442DB672241B3F1300E3424C /* JSONStorage.swift in Sources */,
+				442DB662241B3E9900E3424C /* JSONManagerTests.swift in Sources */,
+				442DB660241B3E7400E3424C /* ViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		442DB663241B3ED800E3424C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				442DB66A241B3ED800E3424C /* RetroTechAppNetworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		442DB659241B3E2500E3424C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 442DB619241B3AE700E3424C /* RetroTechApp */;
+			targetProxy = 442DB658241B3E2500E3424C /* PBXContainerItemProxy */;
+		};
+		442DB66D241B3ED800E3424C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 442DB619241B3AE700E3424C /* RetroTechApp */;
+			targetProxy = 442DB66C241B3ED800E3424C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		442DB623241B3AE700E3424C /* Main.storyboard */ = {
@@ -282,6 +647,7 @@
 		};
 		442DB62F241B3AEA00E3424C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 375E182944B4A7FCFCC5B1CC /* Pods-RetroTechApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -292,7 +658,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Eugene-uskov.RetroTechApp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Retro Tech";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +666,7 @@
 		};
 		442DB630241B3AEA00E3424C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5264C02887CCDAB7FE2F734 /* Pods-RetroTechApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,9 +677,91 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Eugene-uskov.RetroTechApp";
+				PRODUCT_NAME = "Retro Tech";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		442DB65B241B3E2500E3424C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26D1BDD7006614F1682DDDC8 /* Pods-RetroTechAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CA72R6B357;
+				INFOPLIST_FILE = RetroTechAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eugene-uskov.RetroTechAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retro Tech.app/Retro Tech";
+			};
+			name = Debug;
+		};
+		442DB65C241B3E2500E3424C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71A1924665570B808ADB6B4A /* Pods-RetroTechAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CA72R6B357;
+				INFOPLIST_FILE = RetroTechAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eugene-uskov.RetroTechAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retro Tech.app/Retro Tech";
+			};
+			name = Release;
+		};
+		442DB66F241B3ED800E3424C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CA72R6B357;
+				INFOPLIST_FILE = RetroTechAppNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eugene-uskov.RetroTechAppNetworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retro Tech.app/Retro Tech";
+			};
+			name = Debug;
+		};
+		442DB670241B3ED800E3424C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CA72R6B357;
+				INFOPLIST_FILE = RetroTechAppNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Eugene-uskov.RetroTechAppNetworkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Retro Tech.app/Retro Tech";
 			};
 			name = Release;
 		};
@@ -333,6 +782,24 @@
 			buildConfigurations = (
 				442DB62F241B3AEA00E3424C /* Debug */,
 				442DB630241B3AEA00E3424C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442DB65A241B3E2500E3424C /* Build configuration list for PBXNativeTarget "RetroTechAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442DB65B241B3E2500E3424C /* Debug */,
+				442DB65C241B3E2500E3424C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		442DB66E241B3ED800E3424C /* Build configuration list for PBXNativeTarget "RetroTechAppNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				442DB66F241B3ED800E3424C /* Debug */,
+				442DB670241B3ED800E3424C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
