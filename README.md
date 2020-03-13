@@ -1,9 +1,7 @@
 # Retro Tech
 
 Device history guide app. 
-There goes awesome text about features of the app, what problems it solves and opportunities it provides.
-There goes awesome text about features of the app, what problems it solves and opportunities it provides.
-There goes awesome text about features of the app, what problems it solves and opportunities it provides.
+There goes text about features of the app, what problems it solves and opportunities it provides.
 
 ### Used frameworks
 - Alamofire
