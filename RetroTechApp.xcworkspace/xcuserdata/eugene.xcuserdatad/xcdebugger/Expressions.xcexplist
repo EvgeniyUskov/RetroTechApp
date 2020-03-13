@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "DetailsViewController.onDidReceiveData(_:):DetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cache.object(forKey: &quot;jjj&quot;)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ComputerDetailsView.updateInfo():ComputerDetailsView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "device.image">
+            </PersistentString>
+            <PersistentString
+               value = "computer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DetailsViewController.getDetails():DetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "computer">
+            </PersistentString>
+            <PersistentString
+               value = "cache.object(forKey: String(id) as NSString)">
+            </PersistentString>
+            <PersistentString
+               value = "cachedVersion">
+            </PersistentString>
+            <PersistentString
+               value = "cache">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

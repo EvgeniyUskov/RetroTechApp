@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  NaumenTestApp
+//  RetroTechApp
 //
 //  Created by Evgeniy Uskov on 03.03.2020.
 //  Copyright © 2020 Evgeniy Uskov. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Device {
+struct Device: Hashable{
     let id: Int
     let name: String
     var description: String?
@@ -39,5 +39,12 @@ struct Device {
         self.introduced = introduced
         self.discounted = discounted
         self.imageUrl = imageUrl
+    }
+    
+}
+
+extension Device: Equatable {
+    static func ==(lhs: Device, rhs: Device) -> Bool {
+        return lhs.id == rhs.id
     }
 }

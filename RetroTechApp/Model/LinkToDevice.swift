@@ -1,6 +1,6 @@
 //
 //  LinkToDevice.swift
-//  NaumenTestApp
+//  RetroTechApp
 //
 //  Created by Evgeniy Uskov on 10.03.2020.
 //  Copyright © 2020 Evgeniy Uskov. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LinkToDevice {
+struct LinkToDevice: Hashable {
      var id: Int
      var name: String
     
@@ -18,3 +18,10 @@ class LinkToDevice {
     }
     
 }
+
+extension LinkToDevice: Equatable {
+    static func ==(lhs: LinkToDevice, rhs: LinkToDevice) -> Bool {
+        return lhs.id == rhs.id
+    }
+}
+

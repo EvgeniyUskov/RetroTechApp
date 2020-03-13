@@ -1,6 +1,6 @@
 //
 //  ComputerTableViewCell.swift
-//  NaumenTestApp
+//  RetroTechApp
 //
 //  Created by Evgeniy Uskov on 05.03.2020.
 //  Copyright © 2020 Evgeniy Uskov. All rights reserved.

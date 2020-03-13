@@ -1,6 +1,6 @@
 //
 //  JSONContent.swift
-//  NaumenTestAppTests
+//  RetroTechAppTests
 //
 //  Created by Evgeniy Uskov on 11.03.2020.
 //  Copyright © 2020 Evgeniy Uskov. All rights reserved.

@@ -32,6 +32,7 @@
 		442DB662241B3E9900E3424C /* JSONManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB661241B3E9900E3424C /* JSONManagerTests.swift */; };
 		442DB66A241B3ED800E3424C /* RetroTechAppNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB669241B3ED800E3424C /* RetroTechAppNetworkTests.swift */; };
 		442DB672241B3F1300E3424C /* JSONStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442DB671241B3F1300E3424C /* JSONStorage.swift */; };
+		4435BE8C241B5E7700214C90 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4435BE8B241B5E7700214C90 /* Cache.swift */; };
 		731E509D89E6CCD69418D248 /* Pods_RetroTechApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 995648C222E6617AAC1B9F01 /* Pods_RetroTechApp.framework */; };
 		7AC17675C93496A1BECBDFF2 /* Pods_RetroTechAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553C08D457042A732B0D59A5 /* Pods_RetroTechAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,7 @@
 		442DB669241B3ED800E3424C /* RetroTechAppNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroTechAppNetworkTests.swift; sourceTree = "<group>"; };
 		442DB66B241B3ED800E3424C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		442DB671241B3F1300E3424C /* JSONStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONStorage.swift; sourceTree = "<group>"; };
+		4435BE8B241B5E7700214C90 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		553C08D457042A732B0D59A5 /* Pods_RetroTechAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetroTechAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71A1924665570B808ADB6B4A /* Pods-RetroTechAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RetroTechAppTests.release.xcconfig"; path = "Target Support Files/Pods-RetroTechAppTests/Pods-RetroTechAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		995648C222E6617AAC1B9F01 /* Pods_RetroTechApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RetroTechApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,15 +147,14 @@
 		442DB61C241B3AE700E3424C /* RetroTechApp */ = {
 			isa = PBXGroup;
 			children = (
+				442DB621241B3AE700E3424C /* ViewController.swift */,
+				442DB633241B3BD900E3424C /* DetailsViewController.swift */,
 				442DB673241B3F5400E3424C /* Delegates */,
 				442DB674241B3F7400E3424C /* Utils */,
 				442DB675241B3F8F00E3424C /* Managers */,
-				442DB677241B3FAC00E3424C /* ViewModel */,
 				442DB676241B3F9D00E3424C /* Model */,
-				442DB63F241B3C9B00E3424C /* ComputerTableViewCell.swift */,
-				442DB621241B3AE700E3424C /* ViewController.swift */,
-				442DB633241B3BD900E3424C /* DetailsViewController.swift */,
 				442DB678241B3FC200E3424C /* View */,
+				442DB677241B3FAC00E3424C /* ViewModel */,
 				442DB62B241B3AEA00E3424C /* Info.plist */,
 			);
 			path = RetroTechApp;
@@ -193,6 +194,7 @@
 		442DB674241B3F7400E3424C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4435BE8B241B5E7700214C90 /* Cache.swift */,
 				442DB643241B3D2100E3424C /* Notifications.swift */,
 				442DB641241B3CEB00E3424C /* DateUtils.swift */,
 				442DB645241B3D3B00E3424C /* UIHelper.swift */,
@@ -232,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				442DB631241B3B5400E3424C /* ComputerDetailsView.swift */,
+				442DB63F241B3C9B00E3424C /* ComputerTableViewCell.swift */,
 				442DB623241B3AE700E3424C /* Main.storyboard */,
 				442DB626241B3AEA00E3424C /* Assets.xcassets */,
 				442DB628241B3AEA00E3424C /* LaunchScreen.storyboard */,
@@ -468,6 +471,7 @@
 				442DB638241B3C2200E3424C /* NetworkManager.swift in Sources */,
 				442DB61E241B3AE700E3424C /* AppDelegate.swift in Sources */,
 				442DB620241B3AE700E3424C /* SceneDelegate.swift in Sources */,
+				4435BE8C241B5E7700214C90 /* Cache.swift in Sources */,
 				442DB634241B3BD900E3424C /* DetailsViewController.swift in Sources */,
 				442DB648241B3D7C00E3424C /* ComputerDetailsViewModel.swift in Sources */,
 				442DB63E241B3C7500E3424C /* LinkToDevice.swift in Sources */,

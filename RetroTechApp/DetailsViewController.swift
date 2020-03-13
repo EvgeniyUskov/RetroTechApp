@@ -1,6 +1,6 @@
 //
 //  DetailsViewController.swift
-//  NaumenTestApp
+//  RetroTechApp
 //
 //  Created by Evgeniy Uskov on 04.03.2020.
 //  Copyright © 2020 Evgeniy Uskov. All rights reserved.
@@ -32,9 +32,21 @@ class DetailsViewController: UIViewController, NavigationBarTitleChangerDelegate
     
     private func getDetails() {
         if let id = computerId {
-            let semaphore = DispatchSemaphore(value: 0)
-            networkManager.getDetailInfo(id: id, semaphore: semaphore)
-            networkManager.getLinks(id: id)
+            if let cachedVersion = Cache.cacheInstance.cache.object(forKey: String(id) as NSString) {
+                computer = cachedVersion
+                
+                let rootView = view as! ComputerDetailsView
+                rootView.computer = computer
+                rootView.updateInfo()
+                rootView.updateLinks()
+            } else {
+                let semaphore = DispatchSemaphore(value: 0)
+                networkManager.getDetailInfo(id: id, semaphore: semaphore)
+                networkManager.getLinks(id: id)
+            }
+//            let semaphore = DispatchSemaphore(value: 0)
+//            networkManager.getDetailInfo(id: id, semaphore: semaphore)
+//            networkManager.getLinks(id: id)
         }
     }
     
@@ -58,6 +70,7 @@ class DetailsViewController: UIViewController, NavigationBarTitleChangerDelegate
                     rootView.updateLinks()
                 }
             }
+            Cache.cacheInstance.cache.setObject(computer!, forKey: String(rootView.computer!.id) as NSString)
         }
     }
     

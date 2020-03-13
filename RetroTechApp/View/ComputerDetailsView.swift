@@ -1,6 +1,6 @@
 //
 //  ComputerDetailsView.swift
-//  NaumenTestApp
+//  RetroTechApp
 //
 //  Created by Evgeniy Uskov on 05.03.2020.
 //  Copyright © 2020 Evgeniy Uskov. All rights reserved.
@@ -228,9 +228,15 @@ class ComputerDetailsView: UIView {
         if let computerLocal = computer {
             if computerLocal.links != nil {
                 let idLocal = computerLocal.links![tag - 1].id
-                let semaphore = DispatchSemaphore(value: 0)
-                networkManager.getDetailInfo(id: idLocal,semaphore: semaphore)
-                networkManager.getLinks(id: idLocal)
+                if let cachedVersion = Cache.cacheInstance.cache.object(forKey: String(idLocal) as NSString) {
+                    computer = cachedVersion
+                    updateInfo()
+                    updateLinks()
+                } else {
+                    let semaphore = DispatchSemaphore(value: 0)
+                    networkManager.getDetailInfo(id: idLocal,semaphore: semaphore)
+                    networkManager.getLinks(id: idLocal)
+                }
             }
         }
     }
@@ -254,13 +260,14 @@ class ComputerDetailsView: UIView {
                     updateLinks()
                 }
             }
+            Cache.cacheInstance.cache.setObject(computer!, forKey: String(computer!.id) as NSString)
         }
         
     }
     
     //MARK:- Update View methods
     func updateInfo() {
-        if let device =  computer {
+        if let device = computer {
             DispatchQueue.main.async {
                 SVProgressHUD.show(withStatus: "Loading")
             }
