@@ -40,48 +40,53 @@ class NetworkManager {
     }
     
     func getComputers(pageIndex: Int, searchText: String? = nil) {
-        var parameters = [String: Any]()
-        parameters["p"] = pageIndex
-        if let text = searchText{
-            parameters["f"] = text
-        }
-        Alamofire.request(NetworkManager.getComputerListUrl(), method: .get, parameters: parameters).responseJSON {
-            (response) in
-            if response.result.isSuccess {
-                self.getResponse(type: .devices, response: response)
+        DispatchQueue.global().async {
+            var parameters = [String: Any]()
+            parameters["p"] = pageIndex
+            if let text = searchText{
+                parameters["f"] = text
             }
-            else {
-                debugPrint("Error loading devices")
-                self.delegate?.showAlert()
+            Alamofire.request(NetworkManager.getComputerListUrl(), method: .get, parameters: parameters).responseJSON {
+                (response) in
+                if response.result.isSuccess {
+                    self.getResponse(type: .devices, response: response)
+                }
+                else {
+                    debugPrint("Error loading devices")
+                    self.delegate?.showAlert()
+                }
             }
         }
-        
     }
     
     func getDetailInfo(id: Int, semaphore: DispatchSemaphore) {
-        Alamofire.request(NetworkManager.getDetailsUrl(id: id), method: .get).responseJSON {
-            (response) in
-            if response.result.isSuccess {
-                self.getResponse(type: .details, response: response)
-                semaphore.signal()
+        DispatchQueue.global().async {
+            Alamofire.request(NetworkManager.getDetailsUrl(id: id), method: .get).responseJSON {
+                (response) in
+                if response.result.isSuccess {
+                    self.getResponse(type: .details, response: response)
+                    semaphore.signal()
+                }
+                else {
+                    debugPrint("Error loading details for device id: \(id)")
+                    self.delegate?.showAlert()
+                }
             }
-            else {
-                debugPrint("Error loading details for device id: \(id)")
-                self.delegate?.showAlert()
-            }
+            let _ = semaphore.wait(timeout: .now() + 0.3)
         }
-        let _ = semaphore.wait(timeout: .now() + 0.3)
     }
     
     func getLinks(id: Int) {
-        Alamofire.request(NetworkManager.getSuggestedLinksUrl(id: id), method: .get).responseJSON {
-            (response) in
-            if response.result.isSuccess {
-                self.getResponse(type: .links, response: response)
-            }
-            else {
-                debugPrint("Error loading links for device id: \(id)")
-                self.delegate?.showAlert()
+        DispatchQueue.global().async {
+            Alamofire.request(NetworkManager.getSuggestedLinksUrl(id: id), method: .get).responseJSON {
+                (response) in
+                if response.result.isSuccess {
+                    self.getResponse(type: .links, response: response)
+                }
+                else {
+                    debugPrint("Error loading links for device id: \(id)")
+                    self.delegate?.showAlert()
+                }
             }
         }
     }

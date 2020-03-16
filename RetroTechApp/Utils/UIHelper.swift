@@ -44,10 +44,6 @@ extension UILabel {
         return label
     }
     
-    static func createURLString(text: String, url: String) -> NSMutableAttributedString {
-        return NSMutableAttributedString(string: text, attributes:[NSAttributedString.Key.link: URL(string: url)!])
-    }
-    
     private static func makeLabelInternal(fontSize: CGFloat) -> UILabel {
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: fontSize)
